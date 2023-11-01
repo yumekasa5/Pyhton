@@ -14,10 +14,17 @@ classDiagram
 
     }
 
+    class ServoMotor{
+
+    }
+
     ServoControl--|>SerialControl
     SerialControl--|>SerialComIF
 
 ```
+#### ServoMotorクラス
+- 個々のモータのクラス
+- クラス一つが一つのThread
 
 #### ServoControlクラス
 - ServoMotorを制御するクラス
@@ -27,6 +34,7 @@ classDiagram
     - servoStatus
     - targetAngle
 - 必要なメンバクラス
+    - servoMotor
 Servoとアプリとの通信方式に依存する？
 通信方式にできれば、依存しない方がいい？→隠蔽する？
     - SerialControl
@@ -65,6 +73,7 @@ template <class T>
 class Singleton
 {
 public:
+    // テンプレートクラス型の静的な参照を返す
     static T &singleton()
     {
         static typename T::singleton_ptr_t
@@ -86,9 +95,9 @@ protected:
 
 private:
     Singleton(const Singleton &) = delete;
-    Singleton &operator=(const Singleton &) = delete;
+    Singleton &operator=(const Singleton &) = delete;   // 演算子オーバーロード
     Singleton(Singleton &&) = delete;
-    Singleton &operator=(Singleton &&) = delete;
+    Singleton &operator=(Singleton &&) = delete;    // 演算子オーバーロード
 };
 ```
 - staticキーワード
@@ -99,5 +108,14 @@ private:
     - 初期化ではコピーコンストラクタが、代入ではoperator=が呼ばれる
 
 - コピーコンストラクタ
-    - 
+    - そのクラス型への参照を引数にとるコンストラクタ
+    - 関数の仮引数にクラス型があると、この仮引数に実引数を渡す際にコピーコンストラクタが呼ばれる
+
+- 初期化
+    - オブジェクトを生成するのに必要なメモリを確保してそこに値を代入する
+
+- 代入
+    - 既に確保されたメモリに値を代入する
+
+
 
