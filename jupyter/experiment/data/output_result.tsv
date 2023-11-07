@@ -1,0 +1,4 @@
+Error Message	Error Code
+Failed to the perform the motor.	0x00008888
+Failed to the perform stage.	0x00ff8888
+PLC is an error.	0x10ab4012
