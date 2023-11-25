@@ -1,0 +1,28 @@
+<html>
+    <h2> jinja2 test </h2>
+    This is jinja2.
+    I am {{name}}. I am {{age}} old.
+    <body>
+        <table border=1>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+            </tr>
+
+            <tr>
+                <td>{{GodName1}}</td>
+                <td>{{Role1}}</td>
+            </tr>
+
+            <tr>
+                <td>{{GodName2}}</td>
+                <td>{{Role2}}</td>
+            </tr>
+
+            <tr>
+                <td>{{GodName3}}</td>
+                <td>{{Role3}}</td>
+            </tr>
+        </table>
+    </body>
+</html>
