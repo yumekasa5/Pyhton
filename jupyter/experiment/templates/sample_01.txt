@@ -3,7 +3,7 @@
     <h2> jinja112 test </h2>
     This is jinja2.
     I am {{name}}. I am {{age}} old.
-    <img src="../data/image/img1.png" alt="My test document">
+    <img src="../results/matplotlib_figure.png" alt="My test document">
     <body>
         <table border=1>
             <tr>
