@@ -1,5 +1,5 @@
-<html>
-<h1> Dynamicaly create HTML documets by jinja2 </h1>
+<html lang="en">
+<h1> Dynamicaly create HTML documents by jinja2 </h1>
 <h2> jinja2 test </h2>
 Module jinja2.
 
