@@ -3,15 +3,16 @@ The license of some pyhton module below.
 
 |Module|License Type|Remark|
 |---|---|---|
-|numpy|modified BSD||
-|pandas|BSD||
-|jinja2|BSD||
+|numpy|modified BSD|https://numpy.org/ja/terms/|
+|pandas|BSD|https://pandas.pydata.org/|
+|jinja2|BSD|https://jinja.palletsprojects.com/en/3.1.x/license/|
 |matplotlib|BSD compatible|https://matplotlib.org/stable/devel/license.html#license-discussion|
 
 ## What is License Type?
 ### BSD 3-Clause
 Note: This license has also been called the “New BSD License” or “Modified BSD License”. 
 
+- this is the example of license clause.
 ```
 Copyright <YEAR> <COPYRIGHT HOLDER>
 
